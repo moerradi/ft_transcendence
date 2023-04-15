@@ -1,0 +1,126 @@
+.login-page {
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100px 50px; */
+    /* height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  /* Center and scale the image nicely */
+  
+}
+
+.login-background {
+    height: 100%;
+    width: 100%;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.main-page {
+    position: relative;
+    width: 90%;
+    height: 92vh;
+    background-color: var(--dark);
+    border-radius: 50px;
+}
+
+.animation-element {
+    position: absolute;
+}
+
+#rainbow {
+    left: 50%;
+    top: -50px;
+    transform: translateX(-45%);
+    height: 105%;
+}
+
+#couple {
+    left: 50%;
+    bottom: 15%;
+    height: 300px;
+    transform: translateX(-45%);
+}
+
+#houssna {
+    right: 26%;
+    bottom: 0;
+    height: 260px;
+}
+
+#ziyad {
+    left: 32%;
+    bottom: 5%;
+    height: 220px;
+}
+
+#cloud2 {
+    left: -5%;
+    top: 22%;
+    height: 400px;
+    z-index: 20;
+}
+
+#cloud4 {
+    left: 8%;
+    top: 18%;
+    height: 330px;
+}
+
+#cloud3 {
+    right: -2%;
+    top: 35%;
+    height: 400px;
+    z-index: 20;
+}
+
+#cloud1 {
+    right: -5%;
+    top: 30%;
+    height: 330px;
+}
+
+#stars1 {
+    left: 20%;
+    top: 42%;
+    height: 300px;
+}
+
+#stars2 {
+    right: 18%;
+    top: 20%;
+    height: 300px;
+}
+
+.login-button {
+	position: absolute;
+	left: 45%;
+    top: 85%;
+	cursor: pointer;
+	outline: none;
+	font-family: var(--font);
+	font-size: 55px;
+    color: var(--dark);
+	height: 6%;
+	width: 13%;
+	border: 5px solid var(--shadow);
+	border-radius: 50px;
+	box-shadow: -10px 10px 0px var(--shadow);
+	z-index: 100;
+    background-color: var(--light);
+}
+
+.login-button:hover {
+    cursor: url("../../assets/svg/hover.svg"), auto;
+	background-color: var(--sunny);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}

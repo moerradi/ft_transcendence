@@ -1,0 +1,159 @@
+  .pong-wrapper {
+	width: 400px;
+	height: 300px;
+	position: relative;
+	margin: 0 auto;
+  }
+  .pong-wrapper .pong-strich {
+	width: 10px;
+	height: 40px;
+	background-color: #fc6cc7;
+	position: absolute;
+  }
+  .pong-wrapper .pong-strich.strich1 {
+	-webkit-animation: strich1move 2.5s linear infinite;
+	animation: strich1move 2.5s linear infinite;
+	left: 0;
+  }
+  .pong-wrapper .pong-strich.strich2 {
+	-webkit-animation: strich2move 2.5s linear infinite;
+	animation: strich2move 2.5s linear infinite;
+	right: 0;
+	-webkit-filter: hue-rotate(360deg);
+	filter: hue-rotate(360deg);
+  }
+  .pong-wrapper .pong-ball {
+	width: 10px;
+	height: 10px;
+	border-radius: 0;
+	position: absolute;
+	background: #fc6cc7;
+	-webkit-animation: ballmove 5s linear infinite;
+	animation: ballmove 5s linear infinite;
+  }
+  @-webkit-keyframes strich1move {
+	0% {
+	  top: 0px;
+	}
+	25% {
+	  top: 50%;
+	}
+	50% {
+	  top: 25%;
+	}
+	75% {
+	  top: 75%;
+	}
+	100% {
+	  top: 0;
+	}
+  }
+  @keyframes strich1move {
+	0% {
+	  top: 0px;
+	}
+	25% {
+	  top: 50%;
+	}
+	50% {
+	  top: 25%;
+	}
+	75% {
+	  top: 75%;
+	}
+	100% {
+	  top: 0;
+	}
+  }
+  @-webkit-keyframes strich2move {
+	0% {
+	  top: 100%;
+	}
+	50% {
+	  top: 0;
+	}
+	100% {
+	  top: 100%;
+	}
+  }
+  @keyframes strich2move {
+	0% {
+	  top: 100%;
+	  right: -10px;
+	}
+	25% {
+	  top: 25%;
+	  right: -20px;
+	  transform: rotate(200deg);
+	}
+	50% {
+	  top: 0;
+	  transform: rotate(380deg);
+	  right: 0;
+	}
+	75% {
+	  top: 25%;
+	  transform: rotate(50deg);
+	  right: -100px;
+	}
+	100% {
+	  top: 100%;
+	  right: -10px;
+	  transform: rotate(-12deg);
+	}
+  }
+  @-webkit-keyframes ballmove {
+	0% {
+	  top: 0;
+	  left: 10px;
+	  -webkit-filter: hue-rotate(0);
+	  filter: hue-rotate(0);
+	}
+	50% {
+	  top: 100%;
+	  left: calc(100% -  10px*2);
+	  -webkit-filter: hue-rotate(360deg);
+	  filter: hue-rotate(360deg);
+	}
+	100% {
+	  top: 0;
+	  left: 10px;
+	  -webkit-filter: hue-rotate(0);
+	  filter: hue-rotate(0);
+	}
+  }
+  @keyframes ballmove {
+	0% {
+	  top: 0;
+	  left: 10px;
+	  -webkit-filter: hue-rotate(0);
+	  filter: hue-rotate(0);
+	}
+	25% {
+	  top: 20px;
+	  left: calc(100% -  10px*2);
+	  -webkit-filter: hue-rotate(180deg);
+	  filter: hue-rotate(180deg);
+	}
+	50% {
+	  top: 100%;
+	  left: calc(100% -  10px);
+	  -webkit-filter: hue-rotate(360deg);
+	  filter: hue-rotate(360deg);
+	}
+	100% {
+	  top: 0;
+	  left: 10px;
+	  -webkit-filter: hue-rotate(0);
+	  filter: hue-rotate(0);
+	}
+  }
+  
+  .canvas-wrapper {
+	border-radius: 20px;
+	overflow: hidden;
+  }
+  .canvas-background {
+	background: url("../../../public/notebook.jpg") no-repeat center center fixed;
+	background-size: cover;
+  }

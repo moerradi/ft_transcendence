@@ -1,0 +1,31 @@
+@import url('./src/reset.css');
+@import url('./src/varibales.css');
+@import url('./src/navbar.css');
+@import url('./src/login.css');
+@import url('./src/chat.css');
+@import url('./src/profil.css');
+@import url('./src/tabs.css');
+@import url('./src/toggle.css');
+@import url('./src/colors.css');
+@import url('./src/popup.css');
+@import url('./src/home.css');
+@import url('./src/dotmenu.css');
+@import url('./src/menu.css');
+@import url('react-tooltip/dist/react-tooltip.css');
+
+
+@import url('./src/topPlayers.css');
+
+
+@import url('./src/error.css');
+
+body {
+  font-family: var(--font);
+  color: var(--dark);
+  cursor: url("../assets/svg/cursor.svg"), auto;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}

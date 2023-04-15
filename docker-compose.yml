@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+  app:
+    build: ./backend
+    command: npm run start:prod
+    ports:
+      - "4242:4242"
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+  db:
+    container_name: db
+    image: postgres
+    env_file:
+      - .env
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+
+  prisma-migrate:
+    build: ./backend
+    command: npx prisma migrate deploy
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - db
+    networks:
+      - app-network
+    restart: on-failure
+
+networks:
+  app-network:

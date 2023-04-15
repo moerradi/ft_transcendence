@@ -1,0 +1,100 @@
+.light-box {
+	background-color: var(--light);
+}
+.light-box-home {
+	background-color: var(--transblue);
+}
+.white-box {
+	background-color: white;
+}
+
+.trans-pink-box {
+	background-color: var(--transpink);
+}
+.trans-brown-box {
+	background-color: #F6F1DF;
+}
+
+.trans-orange-box {
+	background-color: var(--transorange);
+}
+
+.trans-blue-box {
+	background-color: var(--transblue);
+}
+
+.trans-green-box {
+	background-color: var(--transgreen);
+}
+
+.trans-purple-box {
+	background-color: var(--transpurple);
+}
+
+.purple-pattern {
+	background-image: url(/public/purplebg.svg);
+}
+.brown-pattern {
+	background-image: url(/public/brown.svg);
+}
+
+.pink-pattern {
+	background-image: url(/public/pinkbg.svg);
+}
+
+.orange-pattern {
+	background-image: url(/public/orangebg.svg);
+}
+
+.blue-pattern {
+	background-image: url(/public/bluebg.svg);
+}
+.black-pattern {
+	background-image: url(/public/404background.svg);
+}
+
+.green-pattern {
+	background-image: url(/public/greenbg.svg);
+}
+
+.pink-header {
+	background-color: var(--hotpink);
+}
+
+.brown-header {
+	background-color: #C58666;
+}
+
+.red-header {
+	background-color: var(--hotred);
+}
+.gray-header
+{
+	background-color: var(--gray);
+}
+.orange-header {
+	background-color: var(--hotorange);
+}
+
+.blue-header {
+	background-color: var(--hotblue);
+}
+
+.green-header {
+	background-color: var(--hotgreen);
+}
+
+.flower-green {
+	background-color: var(--green);
+}
+
+.coral-bg {
+	background-color: var(--coral);
+}
+
+.green-bg {
+	background-color: var(--green);
+}
+.login-bg {
+	background-image: url(/public/login.png);
+}

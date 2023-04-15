@@ -1,0 +1,50 @@
+.toggle-button input[type="checkbox"] {
+	display: none;
+  }
+  
+  .toggle-button .slider {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	border-radius: 34px;
+	background-color: grey;
+	transition: background-color 0.2s ease-in-out;
+  }
+  
+  .toggle-button .slider:before {
+	position: absolute;
+	content: "";
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	top: 2px;
+	left: 2px;
+	background-color: white;
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .toggle-button input[type="checkbox"]:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  .toggle-button input[type="checkbox"]:checked + .slider:before {
+	transform: translateX(26px);
+  }
+  
+.toggle-slider {
+	background-color: var(--hotpink);
+	overflow: visible;
+}
+
+.toggle-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20%;
+	width: 100%;
+}
+
+.toggle-container img {
+	max-width: 100%;
+}
